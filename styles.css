@@ -6,7 +6,7 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 0.4fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
     height: 100vh;
     grid-template-areas: "sidebar header header"
     "sidebar main-content main-content"
@@ -18,11 +18,88 @@
     grid-area: header;
    
 }
+/* sidebar */
+
 .sidebar {
     background-color: #475569;
     grid-area: sidebar;
+    display: grid;
+    justify-content: center;   
 }
+
+.logoSidebar {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+}
+
+li {
+    list-style-type: none;
+    display: grid;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+
+}
+
+.dogLogo {
+    filter: invert(1);
+    height: 10vh;
+}
+.logo {
+    height: 5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-content {
     background-color: #1e293b;
     grid-area: main-content;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    /* row-gap: 1rem;
+    column-gap: 1rem; */
+    gap: 1rem;
+}
+
+.main-content1 {
+    background-color: antiquewhite;
+}
+.announcement {
+    background-color: thistle
+}
+
+.trending {
+    background-color: thistle
+}
+
+.yourProject {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5vw;
+    margin-left: 5vw;
+    gap: 1rem;
+
+}
+.rightSideContent {
+    padding-top: 5vw;
 }
